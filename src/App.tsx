@@ -23,14 +23,14 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 // Import images
-import logoImg from './assets/logo.png';
-import caminhaoImg from './assets/caminhao-limpa-fossa.png';
-import fossaImg from './assets/fossa.png';
-import hidrojateamentoImg from './assets/hidrojateamento.png';
-import esgotoImg from './assets/desentupimento-de-esgoto.png';
-import gorduraImg from './assets/caixa-de-gordura.png';
-import piasImg from './assets/pias-e-ralos.png';
-import vasosImg from './assets/vasos-e-sanitarios.png';
+import logoImg from './assets/logo.webp';
+import caminhaoImg from './assets/caminhao-limpa-fossa.webp';
+import fossaImg from './assets/fossa.webp';
+import hidrojateamentoImg from './assets/hidrojateamento.webp';
+import esgotoImg from './assets/desentupimento-de-esgoto.webp';
+import gorduraImg from './assets/caixa-de-gordura.webp';
+import piasImg from './assets/pias-e-ralos.webp';
+import vasosImg from './assets/vasos-e-sanitarios.webp';
 
 const WHATSAPP_NUMBER = "5561999263129";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
