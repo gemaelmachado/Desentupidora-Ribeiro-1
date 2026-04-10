@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Lexend", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #2D485D;
+  --color-primary-dark: #1f3241;
+  --color-secondary: #D45633;
+  --color-secondary-dark: #b34729;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
