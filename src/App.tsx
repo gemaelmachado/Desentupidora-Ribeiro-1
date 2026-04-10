@@ -22,15 +22,15 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-// External high-quality images for better reliability and SEO
-const logoImg = "/logo.png"; // Keeping local but will use public path
-const caminhaoImg = "https://images.unsplash.com/photo-1590402444582-43d16d355062?auto=format&fit=crop&q=80&w=1920";
-const fossaImg = "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800";
-const hidrojateamentoImg = "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=800";
-const esgotoImg = "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800";
-const gorduraImg = "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800";
-const piasImg = "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&q=80&w=800";
-const vasosImg = "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=800";
+// Import images
+import logoImg from './assets/logo.png';
+import caminhaoImg from './assets/caminhao-limpa-fossa.webp';
+import fossaImg from './assets/fossa.webp';
+import hidrojateamentoImg from './assets/hidrojateamento.webp';
+import esgotoImg from './assets/desentupimento-de-esgoto.webp';
+import gorduraImg from './assets/caixa-de-gordura.webp';
+import piasImg from './assets/pias-e-ralos.webp';
+import vasosImg from './assets/vasos-e-sanitarios.webp';
 
 const WHATSAPP_NUMBER = "5561999263129";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
