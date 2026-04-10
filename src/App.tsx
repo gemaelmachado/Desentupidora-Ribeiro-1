@@ -284,7 +284,7 @@ export default function App() {
               Desentupidora em Brasília: Entregar resultados excepcionais que superam expectativas.
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto text-balance">
-              Ajudamos empresas e profissionais que buscam qualidade e profissionalismo a resolverem problemas com entupimentos de forma rápida, segura e eficiente.
+              Atendemos residências, empresas e comércios com soluções rápidas e eficientes para qualquer tipo de entupimento.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
@@ -457,7 +457,7 @@ export default function App() {
                   </p>
                   <div className="bg-gray-50 border-l-4 border-secondary p-4 mb-8 rounded-r-md">
                     <p className="text-sm text-gray-700 font-medium">
-                      Ideal para empresas e profissionais que buscam superar a dificuldade em encontrar serviços de qualidade e confiança no mercado.
+                      Ideal para residências, empresas e comércios que buscam serviços de qualidade e confiança no mercado.
                     </p>
                   </div>
                   <a 
@@ -542,7 +542,7 @@ export default function App() {
               Experiência Comprovada no Mercado
             </h2>
             <p className="text-lg text-gray-600">
-              Veja o que empresas e profissionais que buscam qualidade e profissionalismo dizem sobre nossos serviços.
+              Veja o que nossos clientes dizem sobre a qualidade e o profissionalismo dos nossos serviços.
             </p>
           </div>
 
