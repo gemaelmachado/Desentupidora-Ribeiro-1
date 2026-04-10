@@ -157,17 +157,17 @@ export default function App() {
       <div className="hidden md:block bg-primary text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <a href="mailto:gilvanribeiro8584@gmail.com" className="flex items-center hover:text-secondary transition-colors">
+            <a href="mailto:gilvanribeiro8584@gmail.com" title="Enviar e-mail para Desentupidora Ribeiro" className="flex items-center hover:text-secondary transition-colors">
               <Mail className="w-4 h-4 mr-2" />
               gilvanribeiro8584@gmail.com
             </a>
-            <div className="flex items-center">
+            <div className="flex items-center" title="Horário de funcionamento da Desentupidora Ribeiro">
               <Clock className="w-4 h-4 mr-2" />
               Seg à Sáb - 7h às 18h (Plantão 24h)
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">
+            <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" title="Siga a Desentupidora Ribeiro no Instagram" className="hover:text-secondary transition-colors">
               <Instagram className="w-4 h-4" />
             </a>
           </div>
@@ -177,11 +177,12 @@ export default function App() {
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#" className="flex items-center group shrink-0">
+          <a href="#" title="Desentupidora Ribeiro - Home" className="flex items-center group shrink-0">
             <div className="relative flex items-center h-10 md:h-12">
               <img 
                 src={logoImg} 
-                alt="Desentupidora Ribeiro Logo" 
+                alt="Desentupidora Ribeiro - Desentupidora em Brasília" 
+                title="Desentupidora Ribeiro - Especialista em Desentupimento"
                 className="h-full w-auto object-contain block transition-transform group-hover:scale-105 duration-300"
                 loading="eager"
                 decoding="async"
@@ -206,12 +207,12 @@ export default function App() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#sobre" className="font-medium hover:text-secondary transition-colors">Sobre Nós</a>
-            <a href="#servicos" className="font-medium hover:text-secondary transition-colors">Serviços</a>
-            <a href="#diferenciais" className="font-medium hover:text-secondary transition-colors">Diferenciais</a>
-            <a href="#depoimentos" className="font-medium hover:text-secondary transition-colors">Depoimentos</a>
-            <a href="#contato" className="font-medium hover:text-secondary transition-colors">Contato</a>
-            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-md font-medium transition-colors flex items-center">
+            <a href="#sobre" title="Conheça a história da Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Sobre Nós</a>
+            <a href="#servicos" title="Veja nossos serviços de desentupimento em Brasília" className="font-medium hover:text-secondary transition-colors">Serviços</a>
+            <a href="#diferenciais" title="Por que escolher a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Diferenciais</a>
+            <a href="#depoimentos" title="O que nossos clientes dizem" className="font-medium hover:text-secondary transition-colors">Depoimentos</a>
+            <a href="#contato" title="Entre em contato com a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Contato</a>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Falar com a Desentupidora em Brasília via WhatsApp" className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-md font-medium transition-colors flex items-center">
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
             </a>
@@ -236,12 +237,12 @@ export default function App() {
               className="md:hidden bg-white border-t overflow-hidden"
             >
               <div className="flex flex-col px-4 py-4 space-y-4">
-                <a href="#sobre" onClick={() => setIsMobileMenuOpen(false)} className="font-medium py-2 border-b">Sobre Nós</a>
-                <a href="#servicos" onClick={() => setIsMobileMenuOpen(false)} className="font-medium py-2 border-b">Serviços</a>
-                <a href="#diferenciais" onClick={() => setIsMobileMenuOpen(false)} className="font-medium py-2 border-b">Diferenciais</a>
-                <a href="#depoimentos" onClick={() => setIsMobileMenuOpen(false)} className="font-medium py-2 border-b">Depoimentos</a>
-                <a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className="font-medium py-2 border-b">Contato</a>
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-4 py-3 rounded-md font-medium text-center flex items-center justify-center">
+                <a href="#sobre" onClick={() => setIsMobileMenuOpen(false)} title="Sobre a Desentupidora Ribeiro" className="font-medium py-2 border-b">Sobre Nós</a>
+                <a href="#servicos" onClick={() => setIsMobileMenuOpen(false)} title="Nossos serviços de desentupimento" className="font-medium py-2 border-b">Serviços</a>
+                <a href="#diferenciais" onClick={() => setIsMobileMenuOpen(false)} title="Diferenciais da Desentupidora Ribeiro" className="font-medium py-2 border-b">Diferenciais</a>
+                <a href="#depoimentos" onClick={() => setIsMobileMenuOpen(false)} title="Depoimentos de clientes satisfeitos" className="font-medium py-2 border-b">Depoimentos</a>
+                <a href="#contato" onClick={() => setIsMobileMenuOpen(false)} title="Fale com a Desentupidora Ribeiro" className="font-medium py-2 border-b">Contato</a>
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Chamar Desentupidora em Brasília no WhatsApp" className="bg-primary text-white px-4 py-3 rounded-md font-medium text-center flex items-center justify-center">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp
                 </a>
@@ -256,7 +257,8 @@ export default function App() {
         <div className="absolute inset-0 z-0">
           <img 
             src={caminhaoImg} 
-            alt="Caminhão limpa fossa da Desentupidora Ribeiro" 
+            alt="Caminhão de hidrojateamento da Desentupidora em Brasília Ribeiro" 
+            title="Equipamento moderno de desentupimento em Brasília"
             className="w-full h-full object-cover"
             loading="eager"
             decoding="async"
@@ -320,7 +322,7 @@ export default function App() {
               className="lg:w-1/2"
             >
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">
-                Qualidade e relacionamento duradouro são fundamentais para o sucesso
+                Sua Desentupidora em Brasília com Qualidade Garantida
               </h2>
               <div className="space-y-4 text-gray-600 text-lg">
                 <p>
@@ -355,7 +357,8 @@ export default function App() {
                 <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
                   <img 
                     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500" 
-                    alt="Gilvan Ribeiro" 
+                    alt="Gilvan Ribeiro - Sócio da Desentupidora em Brasília Ribeiro" 
+                    title="Gilvan Ribeiro - Especialista em Desentupimento"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
@@ -374,7 +377,8 @@ export default function App() {
                 <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=500" 
-                    alt="Agnaldo Ribeiro dos Santos" 
+                    alt="Agnaldo Ribeiro - Especialista em Desentupimento em Brasília" 
+                    title="Agnaldo Ribeiro - Sócio da Desentupidora Ribeiro"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
@@ -405,10 +409,10 @@ export default function App() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
-              Soluções Especializadas para sua Tranquilidade
+              Serviços de Desentupimento em Brasília
             </h2>
             <p className="text-lg text-gray-600">
-              A Desentupidora Ribeiro é especializada em serviços de desentupimento e hidrojateamento 24 horas, atendendo residências, comércios e indústrias que enfrentam problemas com entupimentos e acúmulo de resíduos.
+              A Desentupidora Ribeiro é sua melhor opção para desentupimento e hidrojateamento 24 horas em Brasília, atendendo com rapidez residências e empresas.
             </p>
           </div>
 
@@ -474,7 +478,8 @@ export default function App() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.4 }}
                   src={services[activeServiceTab].image}
-                  alt={services[activeServiceTab].title}
+                  alt={`${services[activeServiceTab].title} - Desentupidora em Brasília`}
+                  title={`Serviço de ${services[activeServiceTab].title} em Brasília`}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -561,7 +566,8 @@ export default function App() {
                 <div className="flex items-center">
                   <img 
                     src={testimonial.image} 
-                    alt={testimonial.name} 
+                    alt={`${testimonial.name} - Cliente da Desentupidora em Brasília Ribeiro`} 
+                    title={`Depoimento de ${testimonial.name}`}
                     className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-white shadow-sm"
                     loading="lazy"
                     decoding="async"
@@ -747,11 +753,12 @@ export default function App() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
             <div>
-              <a href="#" className="flex items-center mb-6 inline-flex group transition-colors">
+              <a href="#" title="Desentupidora Ribeiro - Voltar ao topo" className="flex items-center mb-6 inline-flex group transition-colors">
                 <div className="relative flex items-center h-10">
                   <img 
                     src={logoImg} 
-                    alt="Desentupidora Ribeiro Logo" 
+                    alt="Desentupidora Ribeiro - Desentupidora em Brasília" 
+                    title="Desentupidora Ribeiro - Especialista em Desentupimento"
                     className="h-full w-auto object-contain block brightness-0 invert"
                     loading="lazy"
                     decoding="async"
