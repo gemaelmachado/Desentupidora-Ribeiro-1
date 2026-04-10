@@ -23,14 +23,14 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 // Import images
-import logoImg from './assets/logo.png';
-import caminhaoImg from './assets/caminhao-limpa-fossa.webp';
-import fossaImg from './assets/fossa.webp';
-import hidrojateamentoImg from './assets/hidrojateamento.webp';
-import esgotoImg from './assets/desentupimento-de-esgoto.webp';
-import gorduraImg from './assets/caixa-de-gordura.webp';
-import piasImg from './assets/pias-e-ralos.webp';
-import vasosImg from './assets/vasos-e-sanitarios.webp';
+import logoImg from '/assets/logo.png';
+import caminhaoImg from '/assets/caminhao-limpa-fossa.webp';
+import fossaImg from '/assets/fossa.webp';
+import hidrojateamentoImg from '/assets/hidrojateamento.webp';
+import esgotoImg from '/assets/desentupimento-de-esgoto.webp';
+import gorduraImg from '/assets/caixa-de-gordura.webp';
+import piasImg from '/assets/pias-e-ralos.webp';
+import vasosImg from '/assets/vasos-e-sanitarios.webp';
 
 const WHATSAPP_NUMBER = "5561999263129";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
@@ -50,37 +50,43 @@ export default function App() {
       title: "Desentupimento em Geral",
       icon: <Wrench className="w-6 h-6" />,
       description: "Serviço completo para remoção de entupimentos em tubulações residenciais, comerciais e industriais, garantindo o fluxo normal da água e esgoto.",
-      image: fossaImg
+      image: fossaImg,
+      benefit: "Ideal para resolver obstruções complexas em qualquer ambiente com rapidez e segurança."
     },
     {
       title: "Hidrojateamento",
       icon: <Droplets className="w-6 h-6" />,
       description: "Limpeza profunda com jato de água de alta pressão, ideal para remover sujeiras, incrustações e gorduras das tubulações.",
-      image: hidrojateamentoImg
+      image: hidrojateamentoImg,
+      benefit: "A tecnologia mais avançada para limpeza técnica e desobstrução pesada em redes industriais e comerciais."
     },
     {
       title: "Desentupimento de Esgoto",
       icon: <Droplet className="w-6 h-6" />,
       description: "Solução rápida para redes de esgoto entupidas, eliminando obstruções e evitando refluxos e mau cheiro.",
-      image: esgotoImg
+      image: esgotoImg,
+      benefit: "Intervenção imediata para evitar riscos à saúde, mau cheiro e danos estruturais ao seu imóvel."
     },
     {
       title: "Caixa de Gordura",
       icon: <ShieldCheck className="w-6 h-6" />,
       description: "Limpeza e desobstrução de caixas de gordura, prevenindo acúmulo de resíduos e problemas na rede de esgoto.",
-      image: gorduraImg
+      image: gorduraImg,
+      benefit: "Manutenção preventiva indispensável para cozinhas residenciais e estabelecimentos comerciais."
     },
     {
       title: "Pias e Ralos",
       icon: <CheckCircle2 className="w-6 h-6" />,
       description: "Desobstrução eficiente de pias e ralos, removendo gordura, restos de alimentos e sujeiras, evitando alagamentos.",
-      image: piasImg
+      image: piasImg,
+      benefit: "Solução rápida e limpa para o dia a dia, devolvendo a funcionalidade total da sua cozinha ou banheiro."
     },
     {
       title: "Vasos Sanitários",
       icon: <ThumbsUp className="w-6 h-6" />,
       description: "Remoção de obstruções em vasos sanitários com técnicas seguras e eficientes, evitando danos ao sistema.",
-      image: vasosImg
+      image: vasosImg,
+      benefit: "Atendimento ágil, discreto e higiênico para resolver emergências sanitárias com máxima segurança."
     }
   ];
 
@@ -457,7 +463,7 @@ export default function App() {
                   </p>
                   <div className="bg-gray-50 border-l-4 border-secondary p-4 mb-8 rounded-r-md">
                     <p className="text-sm text-gray-700 font-medium">
-                      Ideal para residências, empresas e comércios que buscam serviços de qualidade e confiança no mercado.
+                      {services[activeServiceTab].benefit}
                     </p>
                   </div>
                   <a 
