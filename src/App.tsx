@@ -281,7 +281,7 @@ export default function App() {
               Atendimento 24 Horas em Brasília
             </span>
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-balance">
-              Desentupidora em Brasília: Entregar resultados excepcionais que superam expectativas.
+              Desentupidora em Brasília: Solução Imediata para Qualquer Entupimento.
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto text-balance">
               Atendemos residências, empresas e comércios com soluções rápidas e eficientes para qualquer tipo de entupimento.
@@ -636,7 +636,7 @@ export default function App() {
         
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 max-w-3xl mx-auto text-balance">
-            Pronto para entregar resultados excepcionais que superam expectativas?
+            Pronto para resolver seu problema de entupimento de forma definitiva?
           </h2>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
             Não deixe que problemas hidráulicos parem o seu negócio ou causem transtornos em sua casa. Fale conosco agora mesmo.
