@@ -23,7 +23,7 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 // Import images
-import logoImg from './assets/logo.webp';
+import logoImg from './assets/logo.png';
 import caminhaoImg from './assets/caminhao-limpa-fossa.webp';
 import fossaImg from './assets/fossa.webp';
 import hidrojateamentoImg from './assets/hidrojateamento.webp';
@@ -178,7 +178,7 @@ export default function App() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#" className="flex items-center group shrink-0">
-            <div className="relative flex items-center h-10 md:h-12 min-w-[150px]">
+            <div className="relative flex items-center h-10 md:h-12">
               <img 
                 src={logoImg} 
                 alt="Desentupidora Ribeiro Logo" 
@@ -747,12 +747,12 @@ export default function App() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
             <div>
-              <a href="#" className="flex items-center mb-6 bg-white/5 p-3 rounded-lg inline-flex group transition-colors hover:bg-white/10">
+              <a href="#" className="flex items-center mb-6 inline-flex group transition-colors">
                 <div className="relative flex items-center h-10">
                   <img 
                     src={logoImg} 
                     alt="Desentupidora Ribeiro Logo" 
-                    className="h-full w-auto object-contain brightness-0 invert block"
+                    className="h-full w-auto object-contain block brightness-0 invert"
                     loading="lazy"
                     decoding="async"
                     width={150}
