@@ -31,6 +31,7 @@ import esgotoImg from '/assets/desentupimento-de-esgoto.webp';
 import gorduraImg from '/assets/caixa-de-gordura.webp';
 import piasImg from '/assets/pias-e-ralos.webp';
 import vasosImg from '/assets/vasos-e-sanitarios.webp';
+import agnaldoImg from '/assets/desentupidora-ribeiro-brasilia-df-agnaldo.jpeg';
 
 const WHATSAPP_NUMBER = "5561999263129";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
@@ -163,9 +164,9 @@ export default function App() {
       <div className="hidden md:block bg-primary text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <a href="mailto:gilvanribeiro8584@gmail.com" title="Enviar e-mail para Desentupidora Ribeiro" className="flex items-center hover:text-secondary transition-colors">
+            <a href="mailto:contato@desentupidoraribeiro.com.br" title="Enviar e-mail para Desentupidora Ribeiro" className="flex items-center hover:text-secondary transition-colors">
               <Mail className="w-4 h-4 mr-2" />
-              gilvanribeiro8584@gmail.com
+              contato@desentupidoraribeiro.com.br
             </a>
             <div className="flex items-center" title="Horário de funcionamento da Desentupidora Ribeiro">
               <Clock className="w-4 h-4 mr-2" />
@@ -332,7 +333,7 @@ export default function App() {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg">
                 <p>
-                  A Desentupidora Ribeiro, liderada pelos sócios <strong className="text-primary">Gilvan Ribeiro</strong> e <strong className="text-primary">Agnaldo Ribeiro dos Santos</strong>, nasceu com o propósito de elevar o padrão de serviços de desentupimento e hidrojateamento em Brasília. Nossa jornada é marcada pelo compromisso inabalável com a excelência técnica e a satisfação total de nossos clientes.
+                  A Desentupidora Ribeiro, liderada pelo especialista <strong className="text-primary">Agnaldo Ribeiro dos Santos</strong>, nasceu com o propósito de elevar o padrão de serviços de desentupimento e hidrojateamento em Brasília. Nossa jornada é marcada pelo compromisso inabalável com a excelência técnica e a satisfação total de nossos clientes.
                 </p>
                 <p>
                   Entendemos que problemas hidráulicos geram transtornos significativos. Por isso, nosso diferencial é o <strong className="text-primary">atendimento personalizado com foco em resultados e expertise especializada no segmento</strong>. Nunca comprometemos a qualidade técnica ou ética profissional por questões comerciais.
@@ -358,33 +359,13 @@ export default function App() {
               transition={{ duration: 0.6 }}
               className="lg:w-1/2 space-y-6"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Gilvan Ribeiro Card */}
-                <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500" 
-                    alt="Gilvan Ribeiro - Sócio da Desentupidora em Brasília Ribeiro" 
-                    title="Gilvan Ribeiro - Especialista em Desentupimento"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={500}
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 p-6 w-full">
-                    <p className="text-white font-heading font-bold text-lg">Gilvan Ribeiro</p>
-                    <p className="text-secondary text-xs font-bold uppercase tracking-widest mt-1">Sócio Fundador</p>
-                  </div>
-                </div>
-
+              <div className="flex justify-center">
                 {/* Agnaldo Ribeiro Card */}
-                <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
+                <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5] max-w-sm w-full">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=500" 
+                    src={agnaldoImg} 
                     alt="Agnaldo Ribeiro - Especialista em Desentupimento em Brasília" 
-                    title="Agnaldo Ribeiro - Sócio da Desentupidora Ribeiro"
+                    title="Agnaldo Ribeiro - Especialista da Desentupidora Ribeiro"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
@@ -395,7 +376,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6 w-full">
                     <p className="text-white font-heading font-bold text-lg">Agnaldo Ribeiro</p>
-                    <p className="text-secondary text-xs font-bold uppercase tracking-widest mt-1">Sócio Fundador</p>
+                    <p className="text-secondary text-xs font-bold uppercase tracking-widest mt-1">Especialista Fundador</p>
                   </div>
                 </div>
               </div>
@@ -719,7 +700,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 mb-1">E-mail</p>
-                      <p className="text-gray-600 text-sm">gilvanribeiro8584@gmail.com</p>
+                      <p className="text-gray-600 text-sm">contato@desentupidoraribeiro.com.br</p>
                     </div>
                   </div>
                 </div>
