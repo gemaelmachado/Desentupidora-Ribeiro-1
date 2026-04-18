@@ -31,7 +31,7 @@ import esgotoImg from '/assets/desentupimento-de-esgoto.webp';
 import gorduraImg from '/assets/caixa-de-gordura.webp';
 import piasImg from '/assets/pias-e-ralos.webp';
 import vasosImg from '/assets/vasos-e-sanitarios.webp';
-import agnaldoImg from '/assets/desentupidora-ribeiro-brasilia-df-agnaldo.jpeg';
+import agnaldoImg from '/assets/desentupidora-ribeiro-brasilia-df-agnaldo.webp';
 
 const WHATSAPP_NUMBER = "5561999263129";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
