@@ -164,9 +164,9 @@ export default function App() {
       <div className="hidden md:block bg-primary text-white py-2 text-sm">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <a href="mailto:contato@desentupidoraribeiro.com.br" title="Enviar e-mail para Desentupidora Ribeiro" className="flex items-center hover:text-secondary transition-colors">
+            <a href="mailto:desentupidoraribeiro1@gmail.com" title="Enviar e-mail para Desentupidora Ribeiro" className="flex items-center hover:text-secondary transition-colors">
               <Mail className="w-4 h-4 mr-2" />
-              contato@desentupidoraribeiro.com.br
+              desentupidoraribeiro1@gmail.com
             </a>
             <div className="flex items-center" title="Horário de funcionamento da Desentupidora Ribeiro">
               <Clock className="w-4 h-4 mr-2" />
@@ -700,7 +700,7 @@ export default function App() {
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 mb-1">E-mail</p>
-                      <p className="text-gray-600 text-sm">contato@desentupidoraribeiro.com.br</p>
+                      <p className="text-gray-600 text-sm">desentupidoraribeiro1@gmail.com</p>
                     </div>
                   </div>
                 </div>
