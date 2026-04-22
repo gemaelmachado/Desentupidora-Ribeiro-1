@@ -174,8 +174,8 @@ export default function App() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" title="Siga a Desentupidora Ribeiro no Instagram" className="hover:text-secondary transition-colors">
-              <Instagram className="w-4 h-4" />
+            <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" title="Siga a Desentupidora Ribeiro no Instagram" aria-label="Siga-nos no Instagram" className="hover:text-secondary transition-colors">
+              <Instagram className="w-4 h-4" aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -227,10 +227,12 @@ export default function App() {
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-primary p-2"
+            className="md:hidden text-primary p-2 focus:ring-2 focus:ring-primary rounded-md"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isMobileMenuOpen}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
           </button>
         </div>
 
@@ -262,12 +264,13 @@ export default function App() {
       {/* 1. Hero Section */}
       <section className="relative min-h-[85vh] flex items-center pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="absolute inset-0 z-0">
-          <img 
+            <img 
             src={caminhaoImg} 
-            alt="Caminhão de hidrojateamento da Desentupidora em Brasília Ribeiro" 
+            alt="Caminhão moderno de hidrojateamento e limpeza de fossas da Desentupidora Ribeiro em Brasília" 
             title="Equipamento moderno de desentupimento em Brasília"
             className="w-full h-full object-cover"
             loading="eager"
+            fetchPriority="high"
             decoding="async"
             width={1920}
             height={1080}
@@ -300,16 +303,18 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center shadow-lg shadow-secondary/30"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Solicitar Atendimento Agora
+                <MessageCircle className="w-5 h-5 mr-2" aria-hidden="true" />
+                Desejo um Orçamento Grátis
               </a>
               <a 
                 href={WHATSAPP_LINK}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="Falar com especialista agora"
+                aria-label="Falar com especialista no WhatsApp"
                 className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
+                <MessageCircle className="w-5 h-5 mr-2" aria-hidden="true" />
                 Falar com Especialista
               </a>
             </div>
@@ -364,7 +369,7 @@ export default function App() {
                 <div className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/5] max-w-sm w-full">
                   <img 
                     src={agnaldoImg} 
-                    alt="Agnaldo Ribeiro - Especialista em Desentupimento em Brasília" 
+                    alt="Agnaldo Ribeiro - Especialista Fundador da Desentupidora Ribeiro Brasília" 
                     title="Agnaldo Ribeiro - Especialista da Desentupidora Ribeiro"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
@@ -563,7 +568,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                   <div>
-                    <h4 className="font-bold text-primary">{testimonial.name}</h4>
+                    <h3 className="font-bold text-primary">{testimonial.name}</h3>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>
@@ -777,7 +782,7 @@ export default function App() {
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Serviços Rápidos</h4>
+              <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Serviços Rápidos</h3>
               <ul className="space-y-3">
                 <li><a href="#servicos" className="hover:text-secondary transition-colors">Desentupimento em Geral</a></li>
                 <li><a href="#servicos" className="hover:text-secondary transition-colors">Hidrojateamento</a></li>
@@ -787,7 +792,7 @@ export default function App() {
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Horário de Atendimento</h4>
+              <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Horário de Atendimento</h3>
               <ul className="space-y-3">
                 <li className="flex justify-between border-b border-gray-800 pb-2">
                   <span>Segunda a Sábado</span>
@@ -824,10 +829,11 @@ export default function App() {
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
+        title="Fale conosco no WhatsApp - Plantão 24h"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 group"
         aria-label="Falar no WhatsApp"
       >
-        <MessageCircle className="w-8 h-8" />
+        <MessageCircle className="w-8 h-8" aria-hidden="true" />
         <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
           Fale conosco agora!
         </span>
