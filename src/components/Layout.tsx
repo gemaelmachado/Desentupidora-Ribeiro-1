@@ -25,11 +25,21 @@ export default function Layout({ children }: LayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Scroll to top on route change
+  // Scroll to top or to hash on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (location.hash) {
+      setTimeout(() => {
+        const id = location.hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0);
+    } else {
+      window.scrollTo(0, 0);
+    }
     setIsMobileMenuOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="min-h-screen font-sans text-gray-800 bg-white">
@@ -152,7 +162,7 @@ export default function Layout({ children }: LayoutProps) {
                 Especialistas em desentupimento e hidrojateamento em Brasília. Qualidade e relacionamento duradouro são fundamentais para o nosso sucesso.
               </p>
               <div className="flex space-x-4">
-                <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                <a href="https://instagram.com/desentupidoraribeiro" target="_blank" rel="noopener noreferrer" title="Visite o perfil da Desentupidora Ribeiro no Instagram" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
@@ -161,11 +171,11 @@ export default function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Serviços Rápidos</h3>
               <ul className="space-y-3">
-                <li><Link to="/desentupimento-esgoto-brasilia" className="hover:text-secondary transition-colors">Desentupimento de Esgoto</Link></li>
-                <li><Link to="/desentupimento-pias-ralos-brasilia" className="hover:text-secondary transition-colors">Pias e Ralos</Link></li>
-                <li><Link to="/limpeza-fossa-brasilia" className="hover:text-secondary transition-colors">Limpeza de Fossa</Link></li>
-                <li><Link to="/hidrojateamento-brasilia" className="hover:text-secondary transition-colors">Hidrojateamento</Link></li>
-                <li><Link to="/limpeza-caixa-gordura-brasilia" className="hover:text-secondary transition-colors">Caixa de Gordura</Link></li>
+                <li><Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="hover:text-secondary transition-colors">Desentupimento de Esgoto</Link></li>
+                <li><Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="hover:text-secondary transition-colors">Pias e Ralos</Link></li>
+                <li><Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília" className="hover:text-secondary transition-colors">Limpeza de Fossa</Link></li>
+                <li><Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento em Brasília" className="hover:text-secondary transition-colors">Hidrojateamento</Link></li>
+                <li><Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura em Brasília" className="hover:text-secondary transition-colors">Caixa de Gordura</Link></li>
               </ul>
             </div>
             
@@ -202,7 +212,7 @@ export default function Layout({ children }: LayoutProps) {
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        title="Fale conosco no WhatsApp - Plantão 24h"
+        title="Falar com a Desentupidora Ribeiro no WhatsApp - Atendimento 24h em Brasília"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 group"
         aria-label="Falar no WhatsApp"
       >

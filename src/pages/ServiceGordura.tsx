@@ -27,7 +27,7 @@ export default function ServiceGordura() {
             className="max-w-3xl"
           >
             <nav className="flex mb-6 text-sm text-gray-300 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
+              <Link to="/" title="Desentupidora Ribeiro DF - Home" className="hover:text-secondary transition-colors">Home</Link>
               <span className="mx-2">/</span>
               <span className="text-white">Caixa de Gordura</span>
             </nav>
@@ -38,7 +38,7 @@ export default function ServiceGordura() {
               Manutenção especializada para cozinhas residenciais e estabelecimentos gastronômicos. Evite o entupimento total da rede de esgoto com a higienização técnica da sua caixa de gordura.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Agendar limpeza de caixa de gordura em Brasília via WhatsApp" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Agendar Limpeza agora
               </a>
@@ -57,7 +57,7 @@ export default function ServiceGordura() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
                 <p>
-                  A caixa de gordura é um componente vital do sistema de esgoto, projetada para reter resíduos gordurosos antes que cheguem à rede pública. No entanto, sem a manutenção correta, essa gordura endurece, causando transbordamentos e o temido mau cheiro na cozinha. A Ribeiro, sua <Link to="/" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link>, oferece um serviço de limpeza profunda e descarte responsável.
+                  A caixa de gordura é um componente vital do sistema de esgoto, projetada para reter resíduos gordurosos antes que cheguem à rede pública. No entanto, sem a manutenção correta, essa gordura endurece, causando transbordamentos e o temido mau cheiro na cozinha. A Ribeiro, sua <Link to="/" title="Home Desentupidora Ribeiro Brasília" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link>, oferece um serviço de limpeza profunda e descarte responsável.
                 </p>
                 <p>
                   Atendemos centenas de restaurantes, condomínios e residências particulares em todo o DF, utilizando equipamentos que removem até as camadas mais compactas de gordura petrificada, devolvendo a plena funcionalidade ao sistema hidráulico.
@@ -121,6 +121,7 @@ export default function ServiceGordura() {
                   href={WHATSAPP_LINK}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  title="Chamar Desentupidora Ribeiro no WhatsApp - Limpeza de Caixa de Gordura em Brasília"
                   className="w-full bg-secondary hover:bg-secondary-dark text-white py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
@@ -137,19 +138,19 @@ export default function ServiceGordura() {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Nossas outras Soluções</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/desentupimento-esgoto-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Esgoto Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/desentupimento-pias-ralos-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Pias e Ralos Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-fossa-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília - Expertise garantida" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Limpeza de Fossa Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/hidrojateamento-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento Técnico em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Hidrojateamento Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>

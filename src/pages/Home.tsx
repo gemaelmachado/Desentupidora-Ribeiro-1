@@ -47,7 +47,8 @@ export default function Home() {
       description: "Serviço completo para remoção de entupimentos em tubulações residenciais, comerciais e industriais, garantindo o fluxo normal da água e esgoto.",
       image: fossaImg,
       benefit: "Ideal para resolver obstruções complexas em qualquer ambiente com rapidez e segurança.",
-      link: "/desentupimento-esgoto-brasilia"
+      link: "/desentupimento-esgoto-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Desentupimento em Geral em Brasília."
     },
     {
       title: "Hidrojateamento",
@@ -55,7 +56,8 @@ export default function Home() {
       description: "Limpeza profunda com jato de água de alta pressão, ideal para remover sujeiras, incrustações e gorduras das tubulações.",
       image: hidrojateamentoImg,
       benefit: "A tecnologia mais avançada para limpeza técnica e desobstrução pesada em redes industriais e comerciais.",
-      link: "/hidrojateamento-brasilia"
+      link: "/hidrojateamento-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Hidrojateamento em Brasília."
     },
     {
       title: "Desentupimento de Esgoto",
@@ -63,7 +65,8 @@ export default function Home() {
       description: "Solução rápida para redes de esgoto entupidas, eliminando obstruções e evitando refluxos e mau cheiro.",
       image: esgotoImg,
       benefit: "Intervenção imediata para evitar riscos à saúde, mau cheiro e danos estruturais ao seu imóvel.",
-      link: "/desentupimento-esgoto-brasilia"
+      link: "/desentupimento-esgoto-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Desentupimento de Esgoto em Brasília."
     },
     {
       title: "Caixa de Gordura",
@@ -71,7 +74,8 @@ export default function Home() {
       description: "Limpeza e desobstrução de caixas de gordura, prevenindo acúmulo de resíduos e problemas na rede de esgoto.",
       image: gorduraImg,
       benefit: "Manutenção preventiva indispensável para cozinhas residenciais e estabelecimentos comerciais.",
-      link: "/limpeza-caixa-gordura-brasilia"
+      link: "/limpeza-caixa-gordura-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Limpeza de Caixa de Gordura em Brasília."
     },
     {
       title: "Pias e Ralos",
@@ -79,7 +83,8 @@ export default function Home() {
       description: "Desobstrução eficiente de pias e ralos, removendo gordura, restos de alimentos e sujeiras, evitando alagamentos.",
       image: piasImg,
       benefit: "Solução rápida e limpa para o dia a dia, devolvendo a funcionalidade total da sua cozinha ou banheiro.",
-      link: "/desentupimento-pias-ralos-brasilia"
+      link: "/desentupimento-pias-ralos-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Desentupimento de Pias e Ralos em Brasília."
     },
     {
       title: "Limpeza de Fossa",
@@ -87,7 +92,8 @@ export default function Home() {
       description: "Esvaziamento e higienização completa de fossas sépticas e sumidouros em áreas urbanas e rurais de Brasília.",
       image: vasosImg,
       benefit: "Atendimento ágil e higiênico para manutenção preventiva ou corretiva de sistemas de esgotamento.",
-      link: "/limpeza-fossa-brasilia"
+      link: "/limpeza-fossa-brasilia",
+      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Limpeza de Fossa em Brasília."
     }
   ];
 
@@ -200,6 +206,7 @@ export default function Home() {
                 href={WHATSAPP_LINK}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="Desejo um Orçamento Grátis - Falar via WhatsApp"
                 className="w-full sm:w-auto bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center shadow-lg shadow-secondary/30"
               >
                 <MessageCircle className="w-5 h-5 mr-2" aria-hidden="true" />
@@ -209,7 +216,7 @@ export default function Home() {
                 href={WHATSAPP_LINK}
                 target="_blank" 
                 rel="noopener noreferrer"
-                title="Falar com especialista agora"
+                title="Falar com Especialista da Desentupidora Ribeiro em Brasília"
                 aria-label="Falar com especialista no WhatsApp"
                 className="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center"
               >
@@ -348,13 +355,26 @@ export default function Home() {
                       {services[activeServiceTab].benefit}
                     </p>
                   </div>
-                  <Link 
-                    to={services[activeServiceTab].link}
-                    className="inline-flex items-center text-secondary font-bold hover:text-secondary-dark transition-colors group"
-                  >
-                    Ver detalhes do serviço
-                    <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  <div className="flex flex-wrap gap-4 items-center">
+                    <Link 
+                      to={services[activeServiceTab].link}
+                      title={`Ver detalhes sobre ${services[activeServiceTab].title} em Brasília`}
+                      className="inline-flex items-center text-secondary font-bold hover:text-secondary-dark transition-colors group"
+                    >
+                      Ver detalhes do serviço
+                      <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <a 
+                      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(services[activeServiceTab].whatsappMessage || '')}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      title={`Solicitar orçamento para ${services[activeServiceTab].title} pelo WhatsApp`}
+                      className="bg-secondary hover:bg-secondary-dark text-white px-6 py-2 rounded-md font-bold transition-all transform hover:scale-105 flex items-center shadow-md"
+                    >
+                      <MessageCircle className="w-4 h-4 mr-2" />
+                      Pedir Orçamento
+                    </a>
+                  </div>
                 </motion.div>
               </div>
               <div className="md:w-1/2 relative min-h-[300px] md:min-h-full">
@@ -394,6 +414,7 @@ export default function Home() {
                 href={WHATSAPP_LINK}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="Solicitar orçamento personalizado de desentupimento via WhatsApp"
                 className="inline-flex items-center bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-bold transition-colors"
               >
                 Solicitar Orçamento

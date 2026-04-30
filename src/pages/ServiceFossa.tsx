@@ -27,7 +27,7 @@ export default function ServiceFossa() {
             className="max-w-3xl"
           >
             <nav className="flex mb-6 text-sm text-gray-300 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
+              <Link to="/" title="Ir para Home - Desentupidora Ribeiro DF" className="hover:text-secondary transition-colors">Home</Link>
               <span className="mx-2">/</span>
               <span className="text-white">Limpeza de Fossa</span>
             </nav>
@@ -38,7 +38,7 @@ export default function ServiceFossa() {
               Esvaziamento e higienização técnica de fossas sépticas com caminhões auto-vácuo de alta capacidade. Atendimento residencial, industrial e rural em todo o DF.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Agendar serviço de limpeza de fossa em Brasília via WhatsApp agora" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Agendar Limpeza agora
               </a>
@@ -57,7 +57,7 @@ export default function ServiceFossa() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
                 <p>
-                  A manutenção periódica de fossas é fundamental para evitar o transbordamento e a contaminação do solo e lençol freático. A Ribeiro se destaca como a principal <Link to="/" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> especializada no esgotamento técnico e transporte adequado de efluentes.
+                  A manutenção periódica de fossas é fundamental para evitar o transbordamento e a contaminação do solo e lençol freático. A Ribeiro se destaca como a principal <Link to="/" title="Desentupidora em Brasília - Ribeiro" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> especializada no esgotamento técnico e transporte adequado de efluentes.
                 </p>
                 <p>
                   Operamos com licenciamento ambiental rigoroso, garantindo que o descarte dos resíduos seja feito em locais autorizados, respeitando todas as normas de segurança do DF. Seja para uma residência em um condomínio fechado ou para uma grande planta industrial, nossa frota está pronta para o desafio.
@@ -111,6 +111,7 @@ export default function ServiceFossa() {
                   href={WHATSAPP_LINK}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  title="Falar com a Desentupidora Ribeiro no WhatsApp - Limpeza de Fossa em Brasília"
                   className="w-full bg-secondary hover:bg-secondary-dark text-white py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
@@ -134,19 +135,19 @@ export default function ServiceFossa() {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Explorar mais Serviços</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/desentupimento-esgoto-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-esgoto-brasilia" title="Desentupimento de Esgoto em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Esgoto Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/desentupimento-pias-ralos-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-pias-ralos-brasilia" title="Desentupimento de Pias e Ralos em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Pias e Ralos Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/hidrojateamento-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/hidrojateamento-brasilia" title="Hidrojateamento Técnico em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Hidrojateamento Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-caixa-gordura-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-caixa-gordura-brasilia" title="Limpeza de Caixa de Gordura em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Caixa de Gordura Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>

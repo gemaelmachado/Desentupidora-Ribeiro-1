@@ -27,7 +27,7 @@ export default function ServicePias() {
             className="max-w-3xl"
           >
             <nav className="flex mb-6 text-sm text-gray-300 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
+              <Link to="/" title="Ir para Home - Desentupidora Ribeiro Brasília" className="hover:text-secondary transition-colors">Home</Link>
               <span className="mx-2">/</span>
               <span className="text-white">Pias e Ralos</span>
             </nav>
@@ -38,7 +38,7 @@ export default function ServicePias() {
               Atendimento ágil para resolver obstruções em cozinhas, banheiros e áreas de serviço. Tecnologia que limpa sem danificar suas tubulações.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Orçamento imediato para desentupimento de pias e ralos no DF via WhatsApp" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Orçamento via WhatsApp
               </a>
@@ -57,7 +57,7 @@ export default function ServicePias() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
                 <p>
-                  Pias que não escoam e ralos transbordando são transtornos comuns, mas que exigem uma intervenção profissional para evitar danos maiores à rede hidráulica. Como sua <Link to="/" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> de confiança, a Ribeiro oferece desobstrução técnica que remove 100% dos resíduos acumulados.
+                  Pias que não escoam e ralos transbordando são transtornos comuns, mas que exigem uma intervenção profissional para evitar danos maiores à rede hidráulica. Como sua <Link to="/" title="Home Desentupidora Ribeiro" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> de confiança, a Ribeiro oferece desobstrução técnica que remove 100% dos resíduos acumulados.
                 </p>
                 <p>
                   Utilizamos métodos que preservam a integridade dos canos de PVC ou metal, eliminando gordura, restos de alimentos, fios de cabelo e outros objetos que impedem o fluxo normal da água. Atendemos todas as RAs de Brasília com agilidade incomparável.
@@ -121,6 +121,7 @@ export default function ServicePias() {
                   href={WHATSAPP_LINK}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  title="Falar com a Desentupidora Ribeiro no WhatsApp - Desentupimento de Pias e Ralos em Brasília"
                   className="w-full bg-secondary hover:bg-secondary-dark text-white py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
@@ -137,19 +138,19 @@ export default function ServicePias() {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Saiba mais sobre Nossos Serviços</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/desentupimento-esgoto-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Esgoto Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-fossa-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília - Solução garantida" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Limpeza de Fossa Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/hidrojateamento-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento Técnico em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Hidrojateamento Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-caixa-gordura-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura no DF" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Caixa de Gordura Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>

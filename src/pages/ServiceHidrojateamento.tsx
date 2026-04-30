@@ -27,7 +27,7 @@ export default function ServiceHidrojateamento() {
             className="max-w-3xl"
           >
             <nav className="flex mb-6 text-sm text-gray-300 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
+              <Link to="/" title="Desentupidora Ribeiro DF - Página Inicial" className="hover:text-secondary transition-colors">Home</Link>
               <span className="mx-2">/</span>
               <span className="text-white">Hidrojateamento</span>
             </nav>
@@ -38,7 +38,7 @@ export default function ServiceHidrojateamento() {
               Tecnologia de limpeza técnica por alta pressão para tubulações industriais, comerciais e prediais. A solução definitiva contra incrustações e gordura pesada.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Solicitar orçamento técnico para hidrojateamento em Brasília via WhatsApp" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Desejo um Orçamento Técnico
               </a>
@@ -57,7 +57,7 @@ export default function ServiceHidrojateamento() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
                 <p>
-                  O hidrojateamento é o método mais eficaz e ecológico de limpeza de tubulações. Como sua <Link to="/" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> especializada, a Ribeiro utiliza bombas de altíssima pressão que cortam raízes, desintegram placas de gordura e removem detritos encrostados no interior dos canos sem o uso de produtos químicos corrosivos.
+                  O hidrojateamento é o método mais eficaz e ecológico de limpeza de tubulações. Como sua <Link to="/" title="Home Ribeiro Desentupidora" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link> especializada, a Ribeiro utiliza bombas de altíssima pressão que cortam raízes, desintegram placas de gordura e removem detritos encrostados no interior dos canos sem o uso de produtos químicos corrosivos.
                 </p>
                 <p>
                   Este serviço é especialmente indicado para condomínios, indústrias e grandes cozinhas comerciais que necessitam de uma manutenção profunda para evitar paradas críticas. Nossa equipe técnica domina o manejo dos bicos especiais para cada tipo de obstrução, garantindo a restauração total do diâmetro original da tubulação.
@@ -121,6 +121,7 @@ export default function ServiceHidrojateamento() {
                   href={WHATSAPP_LINK}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  title="Falar com a Desentupidora Ribeiro no WhatsApp - Hidrojateamento Técnico em Brasília"
                   className="w-full bg-secondary hover:bg-secondary-dark text-white py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
@@ -137,19 +138,19 @@ export default function ServiceHidrojateamento() {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Complemente sua Manutenção</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/desentupimento-esgoto-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Esgoto Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/desentupimento-pias-ralos-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Pias e Ralos Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-fossa-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília - Garantia de qualidade" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Limpeza de Fossa Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-caixa-gordura-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura no DF" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Caixa de Gordura Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>

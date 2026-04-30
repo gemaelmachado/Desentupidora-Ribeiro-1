@@ -28,7 +28,7 @@ export default function ServiceEsgoto() {
             className="max-w-3xl"
           >
             <nav className="flex mb-6 text-sm text-gray-300 font-medium">
-              <Link to="/" className="hover:text-secondary transition-colors">Home</Link>
+              <Link to="/" title="Voltar para a página inicial da Desentupidora Ribeiro" className="hover:text-secondary transition-colors">Home</Link>
               <span className="mx-2">/</span>
               <span className="text-white">Desentupimento de Esgoto</span>
             </nav>
@@ -39,7 +39,7 @@ export default function ServiceEsgoto() {
               Soluções imediatas para redes de esgoto obstruídas. Atendimento especializado 24 horas para residências, condomínios e empresas em todo o Distrito Federal.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Solicitar orçamento para desentupimento de esgoto em Brasília via WhatsApp" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-md font-bold text-lg flex items-center transition-all shadow-lg">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Orçamento via WhatsApp
               </a>
@@ -58,7 +58,7 @@ export default function ServiceEsgoto() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
                 <p>
-                  O entupimento da rede de esgoto é uma das emergências hidráulicas mais sérias, podendo causar refluxos, mau cheiro e riscos à saúde. A Ribeiro, sua <Link to="/" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link>, utiliza tecnologia de ponta para diagnosticar e resolver obstruções de qualquer complexidade.
+                  O entupimento da rede de esgoto é uma das emergências hidráulicas mais sérias, podendo causar refluxos, mau cheiro e riscos à saúde. A Ribeiro, sua <Link to="/" title="Home Desentupidora em Brasília" className="text-secondary font-bold hover:underline">Desentupidora em Brasília</Link>, utiliza tecnologia de ponta para diagnosticar e resolver obstruções de qualquer complexidade.
                 </p>
                 <p>
                   Atendemos com prontidão em todas as regiões administrativas do DF, garantindo que o fluxo do esgoto seja restabelecido com higiene e segurança técnica. Nosso processo envolve desde a inspeção detalhada até a desobstrução completa sem a necessidade de quebrar pisos ou paredes desnecessariamente.
@@ -126,15 +126,16 @@ export default function ServiceEsgoto() {
                   href={WHATSAPP_LINK}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  title="Falar com a Desentupidora Ribeiro no WhatsApp - Desentupimento de Esgoto em Brasília"
                   className="w-full bg-secondary hover:bg-secondary-dark text-white py-4 rounded-md font-bold text-lg flex items-center justify-center transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp Plantão 24h
+                  WhatsApp Brasília
                 </a>
               </div>
               
               <div className="mt-8 rounded-2xl overflow-hidden shadow-lg h-64 relative group">
-                <img src={esgotoImg} alt="Técnico realizando desentupimento de esgoto em Brasília" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <img src={esgotoImg} alt="Técnico realizando desentupimento de esgoto em Brasília - Solução garantida" title="Serviço técnico de desentupimento de esgoto" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
                   <p className="text-white font-bold">Tecnologia avançada em desobstrução técnica.</p>
                 </div>
@@ -149,19 +150,19 @@ export default function ServiceEsgoto() {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Outros Serviços Especializados</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/desentupimento-pias-ralos-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Pias e Ralos Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-fossa-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília - Solução imediata" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Limpeza de Fossa Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/hidrojateamento-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento Técnico em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Hidrojateamento Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
-            <Link to="/limpeza-caixa-gordura-brasilia" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
+            <Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura com garantia no DF" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Caixa de Gordura Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
