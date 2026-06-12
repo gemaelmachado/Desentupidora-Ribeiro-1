@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 
 // Import images
 import caminhaoImg from '/assets/caminhao-limpa-fossa.webp';
-import fossaImg from '/assets/fossa.webp';
+import geralImg from '/assets/fossa.webp';
 import hidrojateamentoImg from '/assets/hidrojateamento.webp';
 import esgotoImg from '/assets/desentupimento-de-esgoto.webp';
 import gorduraImg from '/assets/caixa-de-gordura.webp';
@@ -45,8 +45,8 @@ export default function Home() {
       title: "Desentupimento em Geral",
       icon: <Wrench className="w-6 h-6" />,
       description: "Serviço completo para remoção de entupimentos em tubulações residenciais, comerciais e industriais, garantindo o fluxo normal da água e esgoto.",
-      image: fossaImg,
-      benefit: "Ideal para resolver obstruções complexas em qualquer ambiente com rapidez e segurança.",
+      image: geralImg,
+      benefit: "Ideal para resolver obstruções complexas em qualquer ambiente com rapidez and segurança.",
       link: "/desentupimento-esgoto-brasilia",
       whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Desentupimento em Geral em Brasília."
     },
@@ -85,15 +85,6 @@ export default function Home() {
       benefit: "Solução rápida e limpa para o dia a dia, devolvendo a funcionalidade total da sua cozinha ou banheiro.",
       link: "/desentupimento-pias-ralos-brasilia",
       whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Desentupimento de Pias e Ralos em Brasília."
-    },
-    {
-      title: "Limpeza de Fossa",
-      icon: <ThumbsUp className="w-6 h-6" />,
-      description: "Esvaziamento e higienização completa de fossas sépticas e sumidouros em áreas urbanas e rurais de Brasília.",
-      image: vasosImg,
-      benefit: "Atendimento ágil e higiênico para manutenção preventiva ou corretiva de sistemas de esgotamento.",
-      link: "/limpeza-fossa-brasilia",
-      whatsappMessage: "Olá! Vi no site e gostaria de um orçamento para Limpeza de Fossa em Brasília."
     }
   ];
 
@@ -171,7 +162,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
             <img 
             src={caminhaoImg} 
-            alt="Caminhão moderno de hidrojateamento e limpeza de fossas da Desentupidora Ribeiro em Brasília" 
+            alt="Caminhão moderno de hidrojateamento e desentupimento da Desentupidora Ribeiro em Brasília" 
             title="Equipamento moderno de desentupimento em Brasília"
             className="w-full h-full object-cover"
             loading="eager"

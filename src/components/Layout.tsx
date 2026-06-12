@@ -8,7 +8,8 @@ import {
   X, 
   MessageCircle,
   Droplets,
-  MapPin
+  MapPin,
+  ChevronDown
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
@@ -23,6 +24,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const location = useLocation();
 
   // Scroll to top or to hash on route change
@@ -39,6 +41,7 @@ export default function Layout({ children }: LayoutProps) {
       window.scrollTo(0, 0);
     }
     setIsMobileMenuOpen(false);
+    setIsMobileServicesOpen(false);
   }, [location.pathname, location.hash]);
 
   return (
@@ -92,7 +95,20 @@ export default function Layout({ children }: LayoutProps) {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/#sobre" title="Conheça a história da Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Sobre Nós</Link>
-            <Link to="/#servicos" title="Veja nossos serviços de desentupimento em Brasília" className="font-medium hover:text-secondary transition-colors">Serviços</Link>
+            <div className="relative group py-2">
+              <Link to="/#servicos" title="Veja nossos serviços de desentupimento em Brasília" className="font-medium hover:text-secondary transition-colors flex items-center gap-1">
+                Serviços
+                <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
+              </Link>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[60] overflow-hidden">
+                <div className="py-1">
+                  <Link to="/desentupimento-esgoto-brasilia" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-secondary font-medium transition-colors border-b border-gray-100/50 last:border-0" title="Desentupimento de Esgoto em Brasília">Desentupimento de Esgoto</Link>
+                  <Link to="/desentupimento-pias-ralos-brasilia" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-secondary font-medium transition-colors border-b border-gray-100/50 last:border-0" title="Desentupimento de Pias e Ralos em Brasília">Pias e Ralos</Link>
+                  <Link to="/hidrojateamento-brasilia" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-secondary font-medium transition-colors border-b border-gray-100/50 last:border-0" title="Hidrojateamento em Brasília">Hidrojateamento</Link>
+                  <Link to="/limpeza-caixa-gordura-brasilia" className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-secondary font-medium transition-colors" title="Limpeza de Caixa de Gordura em Brasília">Caixa de Gordura</Link>
+                </div>
+              </div>
+            </div>
             <Link to="/#diferenciais" title="Por que escolher a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Diferenciais</Link>
             <Link to="/#contato" title="Entre em contato com a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Contato</Link>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Falar com a Desentupidora em Brasília via WhatsApp" className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-md font-medium transition-colors flex items-center">
@@ -123,7 +139,32 @@ export default function Layout({ children }: LayoutProps) {
             >
               <div className="flex flex-col px-4 py-4 space-y-4">
                 <Link to="/#sobre" onClick={() => setIsMobileMenuOpen(false)} title="Sobre a Desentupidora Ribeiro" className="font-medium py-2 border-b">Sobre Nós</Link>
-                <Link to="/#servicos" onClick={() => setIsMobileMenuOpen(false)} title="Nossos serviços de desentupimento" className="font-medium py-2 border-b">Serviços</Link>
+                <div className="flex flex-col border-b">
+                  <button 
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                    className="font-medium py-2 flex justify-between items-center w-full text-left text-gray-800 animate-none"
+                    title="Exibir serviços da Desentupidora Ribeiro"
+                  >
+                    <span>Serviços</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div 
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden pl-4 flex flex-col space-y-3 pb-3 pt-1"
+                      >
+                        <Link to="/desentupimento-esgoto-brasilia" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-secondary transition-colors" title="Serviço de Desentupimento de Esgoto">Desentupimento de Esgoto</Link>
+                        <Link to="/desentupimento-pias-ralos-brasilia" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-secondary transition-colors" title="Serviço de Desentupimento de Pias e Ralos">Pias e Ralos</Link>
+                        <Link to="/hidrojateamento-brasilia" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-secondary transition-colors" title="Serviço de Hidrojateamento">Hidrojateamento</Link>
+                        <Link to="/limpeza-caixa-gordura-brasilia" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-gray-600 hover:text-secondary transition-colors" title="Serviço de Limpeza de Caixa de Gordura">Caixa de Gordura</Link>
+                        <Link to="/#servicos" onClick={() => { setIsMobileMenuOpen(false); setIsMobileServicesOpen(false); }} className="text-xs font-semibold text-primary hover:text-secondary transition-colors pt-1">Ver Todos os Serviços →</Link>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
                 <Link to="/#diferenciais" onClick={() => setIsMobileMenuOpen(false)} title="Diferenciais da Desentupidora Ribeiro" className="font-medium py-2 border-b">Diferenciais</Link>
                 <Link to="/#contato" onClick={() => setIsMobileMenuOpen(false)} title="Fale com a Desentupidora Ribeiro" className="font-medium py-2 border-b">Contato</Link>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Chamar Desentupidora em Brasília no WhatsApp" className="bg-primary text-white px-4 py-3 rounded-md font-medium text-center flex items-center justify-center">
@@ -173,7 +214,6 @@ export default function Layout({ children }: LayoutProps) {
               <ul className="space-y-3">
                 <li><Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="hover:text-secondary transition-colors">Desentupimento de Esgoto</Link></li>
                 <li><Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="hover:text-secondary transition-colors">Pias e Ralos</Link></li>
-                <li><Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília" className="hover:text-secondary transition-colors">Limpeza de Fossa</Link></li>
                 <li><Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento em Brasília" className="hover:text-secondary transition-colors">Hidrojateamento</Link></li>
                 <li><Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura em Brasília" className="hover:text-secondary transition-colors">Caixa de Gordura</Link></li>
               </ul>

@@ -137,17 +137,13 @@ export default function ServiceHidrojateamento() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-2xl font-bold text-primary mb-8 text-center">Complemente sua Manutenção</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/desentupimento-esgoto-brasilia" title="Serviço de Desentupimento de Esgoto em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Esgoto Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
             <Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Pias e Ralos Brasília</h3>
-              <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
-            </Link>
-            <Link to="/limpeza-fossa-brasilia" title="Serviço de Limpeza de Fossa em Brasília - Garantia de qualidade" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
-              <h3 className="font-bold text-primary group-hover:text-secondary transition-colors">Limpeza de Fossa Brasília</h3>
               <ArrowRight className="w-5 h-5 mt-4 text-gray-400 group-hover:text-secondary" />
             </Link>
             <Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura no DF" className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
