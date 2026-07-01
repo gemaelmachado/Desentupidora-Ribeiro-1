@@ -29,6 +29,16 @@ export default function Layout({ children }: LayoutProps) {
 
   // Scroll to top or to hash on route change
   useEffect(() => {
+    // Dynamic Canonical URL
+    let canonical = document.querySelector("link[rel='canonical']");
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    const currentUrl = `https://desentupidoraribeiro.com${location.pathname === '/' ? '' : location.pathname}`;
+    canonical.setAttribute("href", currentUrl);
+
     if (location.hash) {
       setTimeout(() => {
         const id = location.hash.replace('#', '');
