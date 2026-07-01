@@ -4,7 +4,7 @@ import { MessageCircle, CheckCircle2, Wrench, ShieldCheck, Clock, ArrowRight, Dr
 import { Link } from 'react-router-dom';
 import piasImg from '/assets/pias-e-ralos.webp';
 
-const WHATSAPP_LINK = "https://wa.me/5561999263129?text=Olá! Gostaria de um orçamento para Desentupimento de Pias e Ralos em Brasília.";
+const WHATSAPP_LINK = "https://wa.me/5561985849011?text=Olá! Gostaria de um orçamento para Desentupimento de Pias e Ralos em Brasília.";
 
 export default function ServicePias() {
   useEffect(() => {

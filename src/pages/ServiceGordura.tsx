@@ -4,7 +4,7 @@ import { MessageCircle, CheckCircle2, Wrench, ShieldCheck, Clock, ArrowRight, Dr
 import { Link } from 'react-router-dom';
 import gorduraImg from '/assets/caixa-de-gordura.webp';
 
-const WHATSAPP_LINK = "https://wa.me/5561999263129?text=Olá! Gostaria de um orçamento para Limpeza de Caixa de Gordura em Brasília.";
+const WHATSAPP_LINK = "https://wa.me/5561985849011?text=Olá! Gostaria de um orçamento para Limpeza de Caixa de Gordura em Brasília.";
 
 export default function ServiceGordura() {
   useEffect(() => {

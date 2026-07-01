@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import logoImg from '/assets/logo.png';
 
-const WHATSAPP_NUMBER = "5561999263129";
+const WHATSAPP_NUMBER = "5561985849011";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
 
 interface LayoutProps {

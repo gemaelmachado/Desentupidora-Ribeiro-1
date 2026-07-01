@@ -4,7 +4,7 @@ import { MessageCircle, CheckCircle2, Wrench, ShieldCheck, Clock, ArrowRight } f
 import { Link } from 'react-router-dom';
 import esgotoImg from '/assets/desentupimento-de-esgoto.webp';
 
-const WHATSAPP_LINK = "https://wa.me/5561999263129?text=Olá! Gostaria de um orçamento para Desentupimento de Esgoto em Brasília.";
+const WHATSAPP_LINK = "https://wa.me/5561985849011?text=Olá! Gostaria de um orçamento para Desentupimento de Esgoto em Brasília.";
 
 export default function ServiceEsgoto() {
   useEffect(() => {

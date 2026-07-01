@@ -29,7 +29,7 @@ import piasImg from '/assets/pias-e-ralos.webp';
 import vasosImg from '/assets/vasos-e-sanitarios.webp';
 import agnaldoImg from '/assets/desentupidora-ribeiro-brasilia-df-agnaldo.webp';
 
-const WHATSAPP_NUMBER = "5561999263129";
+const WHATSAPP_NUMBER = "5561985849011";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento com a Desentupidora Ribeiro.`;
 
 export default function Home() {
@@ -565,7 +565,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-bold text-gray-900 mb-1">Telefone</p>
-                      <p className="text-gray-600 text-sm">(61) 99926-3129</p>
+                      <p className="text-gray-600 text-sm">(61) 98584-9011</p>
                     </div>
                   </div>
 
