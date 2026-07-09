@@ -41,7 +41,7 @@ export default function Layout({ children }: LayoutProps) {
     if (cleanPathname.endsWith('/') && cleanPathname !== '/') {
       cleanPathname = cleanPathname.slice(0, -1);
     }
-    const currentUrl = `https://desentupidoraribeiro.com${cleanPathname}`;
+    const currentUrl = `https://www.desentupidoraribeiro.com${cleanPathname}`;
     canonical.setAttribute("href", currentUrl);
 
     if (location.hash) {

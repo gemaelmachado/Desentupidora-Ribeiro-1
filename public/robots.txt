@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://desentupidoraribeiro.com/sitemap.xml
+Sitemap: https://www.desentupidoraribeiro.com/sitemap.xml
