@@ -36,7 +36,12 @@ export default function Layout({ children }: LayoutProps) {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    const currentUrl = `https://desentupidoraribeiro.com${location.pathname === '/' ? '' : location.pathname}`;
+    // Remove trailing slash if it exists (except for the root '/') to avoid duplicate URL crawling
+    let cleanPathname = location.pathname;
+    if (cleanPathname.endsWith('/') && cleanPathname !== '/') {
+      cleanPathname = cleanPathname.slice(0, -1);
+    }
+    const currentUrl = `https://desentupidoraribeiro.com${cleanPathname}`;
     canonical.setAttribute("href", currentUrl);
 
     if (location.hash) {
