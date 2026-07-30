@@ -528,71 +528,34 @@ export default function Home() {
       </section>
 
       {/* localizacao */}
-      <section id="contato" className="py-24 bg-white">
+      <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">Onde Estamos</h2>
-            <div className="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Atendemos em toda Brasília e região metropolitana com agilidade e prontidão.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-1 space-y-6">
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 shadow-sm">
-                <h3 className="font-heading text-xl font-bold text-primary mb-6">Informações de Contato</h3>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 mr-4">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-900 mb-1">Endereço</p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Qr 603 - Rua 1 - Chácara 39<br />
-                        Condomínio Vida Nova - Lote 1c<br />
-                        Samambaia - Brasília - DF<br />
-                        CEP: 72331-150
-                      </p>
-                    </div>
+          <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="p-10 md:p-12 md:w-2/3">
+                <h2 className="font-heading text-3xl font-bold text-primary mb-4">Precisa de Ajuda Rápida?</h2>
+                <p className="text-gray-600 mb-8 text-lg">
+                  Nossa equipe está pronta para atender você 24 horas por dia. Solicite um orçamento sem compromisso preenchendo nosso formulário.
+                </p>
+                <Link 
+                  to="/contato" 
+                  className="inline-flex items-center justify-center bg-secondary hover:bg-secondary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-secondary/30"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  Ir para Formulário de Contato
+                </Link>
+              </div>
+              <div className="md:w-1/3 bg-primary/5 p-10 flex justify-center items-center h-full w-full border-t md:border-t-0 md:border-l border-gray-100">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md text-primary">
+                    <Phone className="w-10 h-10" />
                   </div>
-
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 mr-4">
-                      <Phone className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-900 mb-1">Telefone</p>
-                      <p className="text-gray-600 text-sm">(61) 98584-9011</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 mr-4">
-                      <Mail className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-900 mb-1">E-mail</p>
-                      <p className="text-gray-600 text-sm">desentupidoraribeiro1@gmail.com</p>
-                    </div>
-                  </div>
+                  <p className="font-bold text-gray-900 mb-1">Ou Ligue Agora</p>
+                  <a href={`tel:${WHATSAPP_NUMBER}`} className="text-secondary font-bold text-xl hover:underline">
+                    (61) 98584-9011
+                  </a>
                 </div>
               </div>
-            </div>
-
-            <div className="lg:col-span-2 h-[450px] rounded-xl overflow-hidden shadow-lg border border-gray-100">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.766345634563!2d-48.08634563456345!3d-15.86634563456345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a330000000000%3A0x0000000000000000!2sSamambaia%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1712750000000!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Desentupidora Ribeiro"
-              ></iframe>
             </div>
           </div>
         </div>

@@ -125,7 +125,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <Link to="/#diferenciais" title="Por que escolher a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Diferenciais</Link>
-            <Link to="/#contato" title="Entre em contato com a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Contato</Link>
+            <Link to="/contato" title="Entre em contato com a Desentupidora Ribeiro" className="font-medium hover:text-secondary transition-colors">Contato</Link>
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Falar com a Desentupidora em Brasília via WhatsApp" className="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-md font-medium transition-colors flex items-center">
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
@@ -181,7 +181,7 @@ export default function Layout({ children }: LayoutProps) {
                   </AnimatePresence>
                 </div>
                 <Link to="/#diferenciais" onClick={() => setIsMobileMenuOpen(false)} title="Diferenciais da Desentupidora Ribeiro" className="font-medium py-2 border-b">Diferenciais</Link>
-                <Link to="/#contato" onClick={() => setIsMobileMenuOpen(false)} title="Fale com a Desentupidora Ribeiro" className="font-medium py-2 border-b">Contato</Link>
+                <Link to="/contato" onClick={() => setIsMobileMenuOpen(false)} title="Fale com a Desentupidora Ribeiro" className="font-medium py-2 border-b">Contato</Link>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" title="Chamar Desentupidora em Brasília no WhatsApp" className="bg-primary text-white px-4 py-3 rounded-md font-medium text-center flex items-center justify-center">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp
@@ -231,6 +231,7 @@ export default function Layout({ children }: LayoutProps) {
                 <li><Link to="/desentupimento-pias-ralos-brasilia" title="Serviço de Desentupimento de Pias e Ralos em Brasília" className="hover:text-secondary transition-colors">Pias e Ralos</Link></li>
                 <li><Link to="/hidrojateamento-brasilia" title="Serviço de Hidrojateamento em Brasília" className="hover:text-secondary transition-colors">Hidrojateamento</Link></li>
                 <li><Link to="/limpeza-caixa-gordura-brasilia" title="Serviço de Limpeza de Caixa de Gordura em Brasília" className="hover:text-secondary transition-colors">Caixa de Gordura</Link></li>
+                <li><Link to="/contato" title="Entre em contato conosco" className="hover:text-secondary transition-colors">Fale Conosco</Link></li>
               </ul>
             </div>
             
