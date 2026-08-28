@@ -3,17 +3,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "desentupidoraribeiro.com"
-        }
-      ],
-      "destination": "https://www.desentupidoraribeiro.com/$1",
-      "permanent": true
-    },
-    {
       "source": "/limpeza-fossa-brasilia",
       "destination": "/desentupimento-esgoto-brasilia",
       "permanent": true

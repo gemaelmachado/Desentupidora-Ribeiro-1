@@ -6,6 +6,7 @@ import ServicePias from './pages/ServicePias';
 import ServiceHidrojateamento from './pages/ServiceHidrojateamento';
 import ServiceGordura from './pages/ServiceGordura';
 import Contato from './pages/Contato';
+import NotFound from './pages/NotFound';
 
 // Main Application Component for Desentupidora Ribeiro
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/hidrojateamento-brasilia" element={<ServiceHidrojateamento />} />
           <Route path="/limpeza-caixa-gordura-brasilia" element={<ServiceGordura />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>
